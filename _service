@@ -8,4 +8,10 @@
         <param name="revision">main</param>
         <param name="extract">package-test.spec</param>
     </service>
+    <service name="set_version" mode="buildtime"/>
+    <service name="tar" mode="buildtime"/>
+    <service name="recompress" mode="buildtime">
+      <param name="file">*.tar</param>
+      <param name="compression">xz</param>
+    </service>
 </services>

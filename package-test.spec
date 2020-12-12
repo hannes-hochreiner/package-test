@@ -3,7 +3,7 @@ Summary: Package test
 License: MIT
 Version: 1.0.0
 Release: 1%{?dist}
-Source: _service:obs_scm:%{name}-%{version}.obscpio
+Source: %{name}-%{version}.tar.xz
 BuildRequires: cargo
 
 %description
