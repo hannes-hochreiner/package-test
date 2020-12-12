@@ -24,7 +24,7 @@ BuildRequires:  rust-packaging
 
 %description %{_description}
 
-%package     -n %{crate}
+#%package     -n %{crate}
 Summary:        %{summary}
 
 %description -n %{crate} %{_description}
