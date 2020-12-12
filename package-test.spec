@@ -15,7 +15,7 @@ License:        MIT
 URL:            https://github.com/hannes-hochreiner/package-test
 Source:         _service:obs_scm:%{name}-%{version}.obscpio # %{crates_source}
 
-ExclusiveArch:  %{rust_arches}
+#ExclusiveArch:  %{rust_arches}
 
 BuildRequires:  rust-packaging
 
