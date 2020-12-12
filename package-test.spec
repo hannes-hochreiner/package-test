@@ -4,7 +4,7 @@
 
 %global crate package-test
 
-Name:           rust-%{crate}
+Name:           %{crate}
 Version:        0.1.0
 Release:        1%{?dist}
 Summary:        A packaging test
@@ -34,7 +34,7 @@ Summary:        %{summary}
 %{_bindir}/package-test
 
 %prep
-%autosetup -n %{crate}-%{version_no_tilde} -p1
+%autosetup -n %{crate}-%{version_no_tilde}.crate -p1
 %cargo_prep
 
 %generate_buildrequires
