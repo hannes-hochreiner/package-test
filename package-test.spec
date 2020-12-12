@@ -34,7 +34,9 @@ Summary:        %{summary}
 %{_bindir}/package-test
 
 %prep
-%autosetup -n %{crate}-%{version_no_tilde}.crate -p1
+%autosetup -n %{crate}-%{version_no_tilde} -p1
+ls .
+ls /home/abuild/rpmbuild/SOURCES
 %cargo_prep
 
 %generate_buildrequires
