@@ -8,6 +8,7 @@ BuildRequires: cargo
 
 %description
 
+%global debug_package %{nil}
 %prep
 %autosetup -n %{name}-%{version_no_tilde} -p1
 ls .
