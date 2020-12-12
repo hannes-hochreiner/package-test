@@ -1,10 +1,9 @@
 Source: package-test
 Priority: optional
 Maintainer: Hannes Hochreiner <hannes@hochreiner.net>
-Build-Depends: debhelper (>= 4.1.16), cargo
+Build-Depends: debhelper (>= 4.1.16)
 
 Package: package-test
 Architecture: any
-Depends: ${shlibs:Depends}
 Description: Package test
  Package test.

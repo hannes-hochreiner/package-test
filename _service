@@ -7,6 +7,11 @@
         <param name="match-tag">v*</param>
         <param name="revision">main</param>
         <param name="extract">package-test.spec</param>
+        <param name="extract">debian.changelog</param>
+        <param name="extract">debian.control</param>
+        <param name="extract">debian.rules</param>
+        <param name="extract">Makefile</param>
+        <param name="extract">package-test.dsc</param>
     </service>
     <service name="set_version" mode="buildtime"/>
     <service name="tar" mode="buildtime"/>
