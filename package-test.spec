@@ -14,10 +14,12 @@ ls .
 ls /home/abuild/rpmbuild/SOURCES
 
 %build
-cd /home/abuild/rpmbuild/SOURCES/%{name}-%{version_no_tilde}; cargo build
+cargo build --release
 
 %install
-
-%post
+rm -rf $RPM_BUILD_ROOT
+mkdir -p $RPM_BUILD_ROOT/%{_bindir}
+cp target/release/${name} $RPM_BUILD_ROOT/%{_bindir}
 
 %files
+%{_bindir}/${name}
