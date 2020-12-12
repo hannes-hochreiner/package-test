@@ -18,8 +18,8 @@ cargo build --release
 
 %install
 rm -rf $RPM_BUILD_ROOT
-mkdir -p $RPM_BUILD_ROOT/%{_bindir}
-cp target/release/${name} $RPM_BUILD_ROOT/%{_bindir}
+mkdir -p $RPM_BUILD_ROOT%{_bindir}
+cp target/release/%{name} $RPM_BUILD_ROOT%{_bindir}
 
 %files
-%{_bindir}/${name}
+%{_bindir}/%{name}
