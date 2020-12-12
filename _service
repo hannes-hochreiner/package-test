@@ -6,6 +6,6 @@
         <param name="versionrewrite-pattern">v(.*)</param>
         <param name="match-tag">v*</param>
         <param name="revision">main</param>
-        <param name="extract">rust-package-test.spec</param>
+        <param name="extract">package-test.spec</param>
     </service>
 </services>
