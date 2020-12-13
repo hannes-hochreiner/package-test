@@ -10,7 +10,7 @@ BuildRequires: cargo
 
 %global debug_package %{nil}
 %prep
-%autosetup -n %{name}-%{version_no_tilde} -p1
+%autosetup -n %{name}-%{version} -p1
 ls .
 ls /home/abuild/rpmbuild/SOURCES
 
